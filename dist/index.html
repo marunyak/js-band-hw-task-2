@@ -20,7 +20,7 @@
                     <th>Name(for ships)
                         /licensePlate(for trucks)</th>
                     <th>producedYear</th>
-                    <th>capacity</th>
+                    <th>capacity(in pounds)</th>
                     <th>averageSpeed</th>
                     <th>countOfTeam(for ships)
                         /typeOfGas(for trucks)</th>
@@ -29,7 +29,7 @@
             <tbody></tbody>
         </table>
     </section>
-    <p>Costs of delivery</p>
+    <p>Cost of delivery</p>
     <section class="table-costs">
         <table>
             <thead>
@@ -53,25 +53,25 @@
 <div class="create create-transport-ship">
     <form>
         <label>Id:</label>
-        <input type="text" name="ship-id" autofocus="" placeholder="Id">
+        <input type="text" name="ship-id" autofocus="" placeholder="Id" required>
 
         <label>Model:</label>
-        <input type="text" name="ship-model" autofocus="" placeholder="Model">
+        <input type="text" name="ship-model" autofocus="" placeholder="Model" required>
 
         <label>Name:</label>
-        <input type="text" name="ship-name" autofocus="" placeholder="Name">
+        <input type="text" name="ship-name" autofocus="" placeholder="Name" required>
 
         <label>ProducedYear:</label>
-        <input type="number" name="ship-year" autofocus="" placeholder="ProducedYear">
+        <input type="number" name="ship-producedYear" autofocus="" max="4" placeholder="ProducedYear" required>
 
         <label>Capacity:</label>
-        <input type="number" name="ship-capacity" autofocus="" placeholder="Capacity">
+        <input type="number" name="ship-capacity" autofocus="" placeholder="Capacity" required>
 
         <label>averageSpeed:</label>
-        <input type="number" name="ship-speed" autofocus="" placeholder="averageSpeed">
+        <input type="number" name="ship-averageSpeed" autofocus="" placeholder="averageSpeed" required>
 
         <label>CountofTeam:</label>
-        <input type="number" name="ship-team" autofocus="" placeholder="CountofTeam">
+        <input type="number" name="ship-countOfTeam" autofocus="" placeholder="CountofTeam" required>
 
         <div class="buttons">
             <div class="button cancel">Cancel</div>
@@ -89,19 +89,19 @@
         <input type="text" name="track-model" autofocus="" placeholder="Model">
 
         <label>licensePlate:</label>
-        <input type="text" name="track-license" autofocus="" placeholder="Name">
+        <input type="text" name="track-licensePlate" autofocus="" placeholder="Name">
 
         <label>ProducedYear:</label>
-        <input type="number" name="track-year" autofocus="" placeholder="ProducedYear">
+        <input type="number" name="track-producedYear" autofocus="" maxlength="4" placeholder="ProducedYear">
 
         <label>Capacity:</label>
         <input type="number" name="track-capacity" autofocus="" placeholder="Capacity">
 
         <label>averageSpeed:</label>
-        <input type="number" name="track-speed" autofocus="" placeholder="averageSpeed">
+        <input type="number" name="track-averageSpeed" autofocus="" placeholder="averageSpeed">
 
         <label>typeOfGas:</label>
-        <input type="number" name="track-gas" autofocus="" placeholder="typeOfGas">
+        <input type="text" name="track-typeOfGas" autofocus="" placeholder="typeOfGas">
 
         <div class="buttons">
             <div class="button cancel">Cancel</div>
@@ -116,10 +116,10 @@
         <input type="text" name="cost-model" autofocus="" placeholder="Transport Model">
 
         <label>Cost(by 1 kg of cargo):</label>
-        <input type="text" name="cost-cargo" autofocus="" placeholder="Cost(by 1 kg of cargo)">
+        <input type="number" name="cost-cargo" autofocus="" placeholder="Cost(by 1 kg of cargo)">
 
         <label>Cost(by 1 km of distance):</label>
-        <input type="text" name="cost-dist" autofocus="" placeholder="Cost(by 1 km of distance)">
+        <input type="number" name="cost-dist" autofocus="" placeholder="Cost(by 1 km of distance)">
 
         <div class="buttons">
             <div class="button cancel">Cancel</div>
