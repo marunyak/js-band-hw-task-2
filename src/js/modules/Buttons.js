@@ -12,7 +12,6 @@ class Buttons {
         let nameElement = elem.parentElement.parentElement.parentElement;
         if (nameElement.classList.contains('create-transport-ship')) {
             const formData = Catalog.getDataFromForm('.create-transport-ship');
-            if (!formData.length) return;
             let local1 = new LocalStorage('transport');
             let list   = local1.get();
 
@@ -24,7 +23,6 @@ class Buttons {
         }
         else if (nameElement.classList.contains('create-transport-track')) {
             const formData = Catalog.getDataFromForm('.create-transport-track');
-            if (!formData.length) return;
             let local2 = new LocalStorage('transport');
             let list   = local2.get();
 
@@ -36,8 +34,6 @@ class Buttons {
         }
         else if (nameElement.classList.contains('create-cost-delivery')) {
             const formData = Catalog.getDataFromForm('.create-cost-delivery');
-
-            if (!formData.length) return;
             new CostOfDelivery().setItem(formData);
 
             Catalog.render();
